@@ -11,3 +11,13 @@
   #task-list {
     margin-top: 20px;
   }
+
+  .task {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
