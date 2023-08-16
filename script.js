@@ -50,3 +50,10 @@ function addTask(event) {
     // Reset task input value
     taskInput.value = "";
   }
+
+  // Event listener for form submission
+const addTaskForm = document.getElementById("add-task-form");
+addTaskForm.addEventListener("submit", addTask);
+
+// Render tasks initially on page load
+renderTasks();
