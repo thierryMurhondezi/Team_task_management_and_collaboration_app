@@ -21,3 +21,8 @@
   form {
     margin-top: 20px;
   }
+
+  input[type="text"] {
+    width: 70%;
+    padding: 5px;
+  }
