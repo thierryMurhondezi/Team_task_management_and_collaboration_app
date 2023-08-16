@@ -8,3 +8,6 @@ const tasks = [
   // Function to render tasks on the page
 function renderTasks() {
     const taskList = document.getElementById("task-list");
+
+    // Clear existing content
+  taskList.innerHTML = "";
