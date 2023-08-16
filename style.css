@@ -3,3 +3,11 @@
     margin: 0 auto;
     padding: 20px;
   }
+
+  h1 {
+    text-align: center;
+  }
+  
+  #task-list {
+    margin-top: 20px;
+  }
