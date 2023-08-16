@@ -17,3 +17,8 @@ function renderTasks() {
         const taskDiv = document.createElement("div");
         taskDiv.className = "task";
         taskDiv.innerHTML = task.description;
+
+        // Apply line-through style if task is completed
+    if (task.completed) {
+        taskDiv.style.textDecoration = "line-through";
+      }
