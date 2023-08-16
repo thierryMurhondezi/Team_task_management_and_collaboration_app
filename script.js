@@ -22,3 +22,7 @@ function renderTasks() {
     if (task.completed) {
         taskDiv.style.textDecoration = "line-through";
       }
+      // Append task div to task list
+    taskList.appendChild(taskDiv);
+  });
+}
