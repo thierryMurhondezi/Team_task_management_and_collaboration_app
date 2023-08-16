@@ -11,3 +11,9 @@ function renderTasks() {
 
     // Clear existing content
   taskList.innerHTML = "";
+
+    // Generate task items dynamically
+    tasks.forEach(task => {
+        const taskDiv = document.createElement("div");
+        taskDiv.className = "task";
+        taskDiv.innerHTML = task.description;
