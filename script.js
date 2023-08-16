@@ -26,3 +26,27 @@ function renderTasks() {
     taskList.appendChild(taskDiv);
   });
 }
+
+// Function to add a new task
+function addTask(event) {
+    event.preventDefault();
+  
+    const taskInput = document.getElementById("task-input");
+    const taskDescription = taskInput.value;
+  
+    // Create new task object
+    const newTask = {
+      id: tasks.length + 1,
+      description: taskDescription,
+      completed: false,
+    };
+  
+    // Add new task to tasks array
+    tasks.push(newTask);
+  
+    // Update task list on the page
+    renderTasks();
+  
+    // Reset task input value
+    taskInput.value = "";
+  }
